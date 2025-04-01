@@ -26,12 +26,10 @@ model2/
     │   └── model2_git2.finetune_roberta_compared_seed42.ipynb  # Seed comparison study
     │
     ├── 3_Model_Analysis/
-    │   ├── model2_git3.Attribution AnalysisFF.ipynb  # Initial attribution analysis
-    │   ├── model2_git3.Attribution AnalysisFF_new_data_Jan15F.ipynb  # Updated attribution analysis
-    │   └── model2_git3.model_uncertainty_1004_result_nov26F_Jan14F.ipynb  # Uncertainty analysis
-    │
-    └── 4_Results_Analysis/
-        └── model2_git3_data flow_model_uncertainty_result_comparisonF.ipynb  # Results comparison
+        ├── model2_git3.Attribution AnalysisFF.ipynb  # Initial attribution analysis
+        ├── model2_git3.Attribution AnalysisFF_new_data_Jan15F.ipynb  # Updated attribution analysis
+        └── model2_git3.model_uncertainty_1004_result_nov26F_Jan14F.ipynb  # Uncertainty analysis
+    
 ```
 
 ## Notebook Workflow
@@ -132,13 +130,7 @@ model2/
 - Loss function: Cross-entropy
 - Early stopping based on validation loss
 
-## Performance
 
-The model achieves:
-- AUC: 0.93
-- Accuracy: [To be added]
-- Precision: [To be added]
-- Recall: [To be added]
 
 ## Dependencies
 
