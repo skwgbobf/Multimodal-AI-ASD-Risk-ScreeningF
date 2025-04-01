@@ -5,33 +5,26 @@ This repository contains a two-stage deep learning system for Autism Spectrum Di
 ## Project Structure
 
 ```
-.
 ├── model1/                 # Stage 1: TD vs (High-Risk + ASD) Classification
-│   ├── model.py           # Main model architecture
-│   ├── dataset.py         # Data loading and preprocessing
-│   ├── train_deep_ensemble2.py  # Training script
+│   ├── model.py           # Main model architecture (722 lines)
+│   ├── dataset.py         # Data loading and preprocessing (386 lines)
+│   ├── train_deep_ensemble2.py  # Training script (173 lines)
 │   └── notebooks/         # Jupyter notebooks for analysis
+│       ├── model1_data preprocess_Final.ipynb  # Data preprocessing and analysis
+│       └── test_model_text.ipynb              # Model testing and evaluation
 │
 ├── model2/                # Stage 2: High-Risk vs ASD Classification
-│   ├── model.py          # Stage 2 model architecture
-│   ├── dataset.py        # Stage 2 data processing
-│   ├── train.py          # Stage 2 training script
+│   ├── model.py          # Stage 2 model architecture (78 lines)
+│   ├── dataset.py        # Stage 2 data processing (57 lines)
+│   ├── train.py          # Stage 2 training script (174 lines)
 │   └── notebooks/        # Analysis and development notebooks
-│       ├── 1_Data_Preprocessing/
-│       │   ├── model2_git1.data preprocess.ipynb        # Initial preprocessing
-│       │   └── 1.Preprocess_20250103_F (2).ipynb       # Advanced preprocessing
-│       │
-│       ├── 2_Model_Development/
-│       │   ├── model2_git2.finetune_roberta.ipynb      # Model implementation
-│       │   └── model2_git2.finetune_roberta_compared_seed42.ipynb  # Reproducibility
-│       │
-│       ├── 3_Model_Analysis/
-│       │   ├── model2_git3.Attribution AnalysisFF.ipynb  # Initial analysis
-│       │   ├── model2_git4.Attribution AnalysisFF_new_data_Jan15F.ipynb  # Updated
-│       │   └── model2_git3.model_uncertainty_1004_result_nov26F_Jan14F.ipynb  # Uncertainty
-│       │
-│       └── 4_Results_Analysis/
-│           └── model2_git3_data flow_model_uncertainty_result_comparisonF.ipynb
+│       ├── 1_Data_Preprocessing/    # Data preparation and cleaning
+│       │   └── model2_data preprocess_Final.ipynb  # Final data preprocessing pipeline
+│       ├── 2_Model_Development/     # Model implementation and training
+│       │   ├── model2_git2.finetune_roberta.ipynb           # Initial model fine-tuning
+│       │   └── model2_git2.finetune_roberta_compared_seed42.ipynb  # Reproducibility study
+│       └── 3_Model_Analysis/        # Model evaluation and analysis
+│           └── model2_.Attribution Analysis_Final.ipynb  # Feature attribution analysis
 │
 ├── requirements.txt      # Project dependencies
 └── README.md            # This file
@@ -100,23 +93,7 @@ This model further classifies children into High-Risk or ASD categories. See [mo
    - Statistical significance testing
    - Cross-validation results
 
-## Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/skwgbobf/Multimodal-AI-ASD-Risk-Screening.git
-cd Multimodal-AI-ASD-Risk-Screening
-```
-
-2. Create a virtual environment and activate it:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
 ```
 
 ## Usage
@@ -161,19 +138,3 @@ model = Stage2ASDClassifier.from_pretrained('roberta-large', num_labels=2)
 predictions = model.predict(text_data)
 ```
 
-## Requirements
-- Python 3.x
-- PyTorch
-- Transformers
-- Pandas
-- Scikit-learn
-- Other dependencies (see requirements.txt)
-
-## Citation
-If you use this code in your research, please cite:
-```
-[Citation information will be added]
-```
-
-## License
-[License information will be added] 
