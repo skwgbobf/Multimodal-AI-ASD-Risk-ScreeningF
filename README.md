@@ -99,24 +99,6 @@ The project includes comprehensive analysis tools:
    - Performance visualization
    - ADOS relatioship and severity stratificaitn 
 
-## Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/skwgbobf/Multimodal-AI-ASD-Risk-ScreeningF.git
-cd Multimodal-AI-ASD-Risk-ScreeningF
-```
-
-2. Create a virtual environment and activate it:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
 
 ## Usage
 
