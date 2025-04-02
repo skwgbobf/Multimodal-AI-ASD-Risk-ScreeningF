@@ -7,16 +7,16 @@ This repository contains a two-stage deep learning system for Autism Spectrum Di
 ```
 .
 ├── Stage1_model/              # Stage 1: TD vs (High-Risk + ASD) Classification
-│   ├── model.py              # Main model architecture (722 lines)
-│   ├── dataset.py            # Data loading and preprocessing (386 lines)
-│   ├── train_deep_ensemble2.py  # Training script (173 lines)
+│   ├── model.py              # Main model architecture 
+│   ├── dataset.py            # Data loading and preprocessing 
+│   ├── train_deep_ensemble2.py  # Training script 
 │   └── notebooks/            # Analysis notebooks
 │       └── Stage1_model_text.ipynb  # Text model analysis
 │
 ├── stage2_model/             # Stage 2: High-Risk vs ASD Classification
-│   ├── model.py              # Stage 2 model architecture (78 lines)
-│   ├── dataset.py            # Stage 2 data processing (57 lines)
-│   ├── train.py              # Stage 2 training script (174 lines)
+│   ├── model.py              # Stage 2 model architecture 
+│   ├── dataset.py            # Stage 2 data processing 
+│   ├── train.py              # Stage 2 training script 
     └── notebooks/            # Analysis notebooks
 │       ├── 1_Data_Preprocessing/    # Data preparation and cleaning
 │       │   └── model2_data preprocess_Final.ipynb  # Final data preprocessing pipeline
