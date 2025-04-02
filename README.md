@@ -255,6 +255,3 @@ data/
 - Sentence Transformers >= 2.2.0
 - Other dependencies (see requirements.txt)
 
-
-
-#
