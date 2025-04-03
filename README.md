@@ -25,7 +25,6 @@ This repository contains a two-stage deep learning system for Autism Spectrum Di
 │       └── 3_Model_Analysis/        # Model evaluation and analysis
 │           └── Stage2model_Analysis_Final.ipynb  # Model application analysis
 │
-├── 1.Preprocess_Final.ipynb  # Comprehensive data preprocessing pipeline
 ├── requirements.txt          # Project dependencies
 └── README.md                # This file
 ```
